@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+body {
+  color: #fff;
+  cursor: default;
+  background: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0; }
+
+p {
+  margin: 0;
+  padding: 1em 0; }
+
+span {
+  color: #ff831de3; }
+
+.btn {
+  display: inline-block;
+  background: #3333332f;
+  border: 1px solid #666;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.5em 0;
+  text-decoration: none;
+  padding: 1em 2em;
+  transition: all 0.4s ease-out; }
+  .btn:hover {
+    color: #fff;
+    background: #ff831de3;
+    border: 1px solid #d6d6d6; }
+
+#showcase {
+  color: #fff;
+  height: 70vh;
+  min-height: 450px;
+  align-content: center; }
+  #showcase .bg-image {
+    background: #333 url("/dist/img/common/backgroundImage2.jpg");
+    height: 70vh;
+    min-height: 450px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0; }
+  #showcase .content-wrap {
+    padding: 0 1.5em; }
+
+main .content-wrap {
+  padding: 0 1.5em; }
+
+main .card-content {
+  padding: 1.5em; }
+
+main .icons {
+  margin-top: 1rem;
+  overflow: hidden; }
+  main .icons p i {
+    margin: 0rem 1rem; }
+  main .icons a {
+    text-decoration: none; }
+    main .icons a i {
+      overflow: hidden;
+      padding: 0.5rem 1rem;
+      color: #fff;
+      transition: all 0.4s ease-out; }
+      main .icons a i:hover {
+        color: #ff831de3; }
+
+main #section-a {
+  background: #eaeaea;
+  color: #333;
+  padding: 2em;
+  height: 30vh; }
+
+main #section-b {
+  padding: 2em 1em 1em;
+  background: url("/dist/img/common/backgroundImage4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main #section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    main #section-b ul li {
+      margin: 1em;
+      background: #fff;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.4s ease-out; }
+      main #section-b ul li:hover {
+        color: #fff;
+        background: #ff831de3; }
+        main #section-b ul li:hover img {
+          opacity: 0.9;
+          filter: grayscale(80%); }
+
+main #section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em; }
+  main #section-c ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0; }
+    main #section-c ul li {
+      margin: 1em auto;
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      color: #333;
+      cursor: pointer;
+      height: 150px;
+      width: 150px;
+      overflow: hidden;
+      transition: all 0.4s ease-out; }
+      main #section-c ul li:hover {
+        border: 2px solid #ff831de3; }
+      main #section-c ul li img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain; }
+  main #section-c .btn-sponsors:hover {
+    color: #fff;
+    background: #ff831de3; }
+
+main #section-d .box {
+  padding: 2em;
+  color: #fff; }
+  main #section-d .box:first-child {
+    background: #2690d4; }
+
+footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center; }
+  footer a {
+    color: #2690d4;
+    text-decoration: none; }
+
+@media screen and (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr; }
+  .content-wrap {
+    grid-column: 2/4; }
+  .box,
+  #main-footer div {
+    grid-column: span 2; }
+  main #section-a .content-text {
+    columns: 2;
+    column-gap: 2em; }
+    main #section-a .content-text p {
+      padding-top: 0; }
+  main #section-b ul {
+    display: flex;
+    grid-column: 2/4;
+    justify-content: space-around; }
+    main #section-b ul li {
+      width: 31%; }
+  main #section-c ul {
+    flex-direction: row; }
+    main #section-c ul li {
+      margin: 1em; } }

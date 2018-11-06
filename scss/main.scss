@@ -1,0 +1,227 @@
+@import "config";
+
+// Core Styles
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  color: #fff;
+  cursor: default;
+  background: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+span {
+  color: $orange-color;
+}
+
+.btn {
+  display: inline-block;
+  background: #3333332f;
+  border: 1px solid #666;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.5em 0;
+  text-decoration: none;
+  padding: 1em 2em;
+  @include easeOut;
+
+  &:hover {
+    color: #fff;
+    background: $orange-color;
+    border: 1px solid #d6d6d6;
+  }
+}
+
+#showcase {
+  color: #fff;
+  height: 70vh;
+  min-height: 450px;
+  align-content: center;
+
+  .bg-image {
+    background: $showcase_background;
+    height: 70vh;
+    min-height: 450px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    @include backgroundProperties;
+  }
+
+  h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .content-wrap {
+    padding: 0 1.5em;
+  }
+}
+
+main {
+  .content-wrap {
+    padding: 0 1.5em;
+  }
+
+  .card-content {
+    padding: 1.5em;
+  }
+
+  .icons {
+    margin-top: 1rem;
+    overflow: hidden;
+    p {
+      i {
+        margin: 0rem 1rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      i {
+        overflow: hidden;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        @include easeOut;
+
+        &:hover {
+          color: $orange-color;
+        }
+      }
+    }
+  }
+
+  #section-a {
+    background: #eaeaea;
+    color: #333;
+    padding: 2em;
+    height: 30vh;
+  }
+
+  #section-b {
+    padding: 2em 1em 1em;
+    background: $section_B_Image;
+    @include backgroundProperties;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 1em;
+        background: #fff;
+        color: #333;
+        cursor: pointer;
+        @include easeOut;
+
+        &:hover {
+          color: #fff;
+          background: $orange-color;
+
+          img {
+            opacity: 0.9;
+            filter: grayscale(80%);
+          }
+        }
+      }
+    }
+  }
+
+  #section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 1em auto;
+        background: #fff;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        color: #333;
+        cursor: pointer;
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+
+        @include easeOut;
+
+        &:hover {
+          border: 2px solid $orange-color;
+        }
+
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .btn-sponsors {
+      &:hover {
+        color: #fff;
+        background: $orange-color;
+      }
+    }
+  }
+
+  #section-d {
+    .box {
+      padding: 2em;
+      color: #fff;
+
+      &:first-child {
+        background: #2690d4;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+
+  a {
+    color: #2690d4;
+    text-decoration: none;
+  }
+}
+
+@import "responsiveness";

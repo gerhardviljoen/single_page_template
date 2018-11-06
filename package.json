@@ -1,0 +1,14 @@
+{
+  "name": "jacita",
+  "version": "1.0.0",
+  "description": "1. Create folder SCSS\r 2. Create main.scss \r 3. Install package.json - npm init\r 4. Intsall Sass - npm i node-sass \r 5. Add this in package.json file:\r \"scripts\": {\r     \"RunSass\": \"node-sass -w scss/ -o dist/css/ --recursive\"\r   },\r 6. npm run RunSass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Gerhard Viljoen",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
