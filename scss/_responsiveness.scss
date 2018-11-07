@@ -46,5 +46,36 @@
         }
       }
     }
+
+    #section-d {
+      .box {
+        &:first-child {
+          .contact-details {
+            text-align: left;
+          }
+        }
+
+        &:last-child {
+          grid-column: 2/4;
+        }
+      }
+
+      #contactForm {
+        .wrapper {
+          display: grid;
+
+          * {
+            padding: 0.5rem;
+            grid-gap: 0px;
+          }
+
+          .contact {
+            form {
+              grid-gap: 0px;
+            }
+          }
+        }
+      }
+    }
   }
 }

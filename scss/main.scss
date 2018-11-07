@@ -1,4 +1,5 @@
 @import "config";
+@import "form";
 
 // Core Styles
 * {
@@ -37,17 +38,20 @@ p {
 
 span {
   color: $orange-color;
+  text-transform: uppercase;
 }
 
 .btn {
   display: inline-block;
   background: #3333332f;
   border: 1px solid #666;
+  border-radius: 2px;
   color: #fff;
   cursor: pointer;
   margin: 0.5em 0;
   text-decoration: none;
-  padding: 1em 2em;
+  text-transform: uppercase;
+  padding: 0.5em 1.5em;
   @include easeOut;
 
   &:hover {
@@ -59,13 +63,13 @@ span {
 
 #showcase {
   color: #fff;
-  // height: 70vh;
+  height: 60vh;
   min-height: 450px;
   align-content: center;
 
   .bg-image {
     background: $showcase_background;
-    // height: 70vh;
+    height: 60vh;
     min-height: 450px;
     width: 100%;
     position: absolute;
@@ -118,11 +122,12 @@ main {
   }
 
   #section-a {
+    align-content: center;
     background: #eaeaea;
     color: #333;
     padding: 2em;
-    // height: 30vh;
-    // min-height: 270px;
+    height: 40vh;
+    min-height: 420px;
   }
 
   #section-b {
@@ -193,12 +198,12 @@ main {
       }
     }
 
-    .btn-sponsors {
-      &:hover {
-        color: #fff;
-        background: $orange-color;
-      }
-    }
+    // .btn-sponsors {
+    //   &:hover {
+    //     color: #fff;
+    //     background: $orange-color;
+    //   }
+    // }
   }
 
   #section-d {
@@ -206,8 +211,15 @@ main {
       padding: 2em;
       color: #fff;
 
+      &.contact-form {
+        background: #2690d4;
+      }
+
       &:first-child {
         background: #2690d4;
+        .contact-details {
+          text-align: center;
+        }
       }
     }
   }

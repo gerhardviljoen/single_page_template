@@ -1,3 +1,35 @@
+main #contactForm {
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.4s ease-out; }
+  main #contactForm .wrapper {
+    text-align: center; }
+    main #contactForm .wrapper .contact {
+      overflow: hidden; }
+      main #contactForm .wrapper .contact form {
+        display: grid;
+        grid-gap: 10px; }
+      main #contactForm .wrapper .contact label {
+        display: block; }
+      main #contactForm .wrapper .contact p {
+        margin: 0; }
+      main #contactForm .wrapper .contact button:hover, main #contactForm .wrapper .contact button:focus {
+        outline: 0; }
+      main #contactForm .wrapper .contact button,
+      main #contactForm .wrapper .contact input,
+      main #contactForm .wrapper .contact textarea {
+        padding: 1em; }
+      main #contactForm .wrapper .contact input,
+      main #contactForm .wrapper .contact textarea {
+        width: 100%;
+        border: 1px solid #c9e6ff; }
+        main #contactForm .wrapper .contact input:focus, main #contactForm .wrapper .contact input:hover,
+        main #contactForm .wrapper .contact textarea:focus,
+        main #contactForm .wrapper .contact textarea:hover {
+          border: 1px solid #ff831de3; }
+      main #contactForm .wrapper .contact .full {
+        grid-column: 1 / 3; }
+
 * {
   box-sizing: border-box;
   overflow-x: hidden; }
@@ -28,17 +60,20 @@ p {
   padding: 1em 0; }
 
 span {
-  color: #ff831de3; }
+  color: #ff831de3;
+  text-transform: uppercase; }
 
 .btn {
   display: inline-block;
   background: #3333332f;
   border: 1px solid #666;
+  border-radius: 2px;
   color: #fff;
   cursor: pointer;
   margin: 0.5em 0;
   text-decoration: none;
-  padding: 1em 2em;
+  text-transform: uppercase;
+  padding: 0.5em 1.5em;
   transition: all 0.4s ease-out; }
   .btn:hover {
     color: #fff;
@@ -47,10 +82,12 @@ span {
 
 #showcase {
   color: #fff;
+  height: 60vh;
   min-height: 450px;
   align-content: center; }
   #showcase .bg-image {
     background: #333 url("../img/common/backgroundImage2.jpg");
+    height: 60vh;
     min-height: 450px;
     width: 100%;
     position: absolute;
@@ -87,13 +124,16 @@ main .icons {
         color: #ff831de3; }
 
 main #section-a {
+  align-content: center;
   background: #eaeaea;
   color: #333;
-  padding: 2em; }
+  padding: 2em;
+  height: 40vh;
+  min-height: 420px; }
 
 main #section-b {
   padding: 2em 1em 1em;
-  background: url("../img/common/backgroundImage4.jpg");
+  background: url("../img/common/backgroundImage6.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -142,15 +182,16 @@ main #section-c {
         width: 150px;
         height: 150px;
         object-fit: contain; }
-  main #section-c .btn-sponsors:hover {
-    color: #fff;
-    background: #ff831de3; }
 
 main #section-d .box {
   padding: 2em;
   color: #fff; }
+  main #section-d .box.contact-form {
+    background: #2690d4; }
   main #section-d .box:first-child {
     background: #2690d4; }
+    main #section-d .box:first-child .contact-details {
+      text-align: center; }
 
 footer {
   padding: 2em;
@@ -184,4 +225,15 @@ footer {
   main #section-c ul {
     flex-direction: row; }
     main #section-c ul li {
-      margin: 1em; } }
+      margin: 1em; }
+  main #section-d .box:first-child .contact-details {
+    text-align: left; }
+  main #section-d .box:last-child {
+    grid-column: 2/4; }
+  main #section-d #contactForm .wrapper {
+    display: grid; }
+    main #section-d #contactForm .wrapper * {
+      padding: 0.5rem;
+      grid-gap: 0px; }
+    main #section-d #contactForm .wrapper .contact form {
+      grid-gap: 0px; } }

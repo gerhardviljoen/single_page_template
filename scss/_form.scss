@@ -1,0 +1,56 @@
+main {
+  #contactForm {
+    color: #fff;
+    overflow: hidden;
+    @include easeOut;
+
+    .wrapper {
+      text-align: center;
+
+      .contact {
+        overflow: hidden;
+
+        form {
+          display: grid;
+          grid-gap: 10px;
+        }
+
+        label {
+          display: block;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        button {
+          &:hover,
+          &:focus {
+            outline: 0;
+          }
+        }
+
+        button,
+        input,
+        textarea {
+          padding: 1em;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          border: 1px solid #c9e6ff;
+
+          &:focus,
+          &:hover {
+            border: 1px solid $orange-color;
+          }
+        }
+
+        .full {
+          grid-column: 1 / 3;
+        }
+      }
+    }
+  }
+}
