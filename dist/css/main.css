@@ -86,13 +86,11 @@ span {
 
 #showcase {
   color: #fff;
-  height: 60vh;
-  min-height: 450px;
+  height: 85vh;
   align-content: center; }
   #showcase .bg-image {
     background: #333 url("../img/common/backgroundImage2.jpg");
-    height: 60vh;
-    min-height: 450px;
+    height: 85vh;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -132,8 +130,8 @@ main #section-a {
   background: #eaeaea;
   color: #333;
   padding: 2em;
-  height: 40vh;
-  min-height: 420px; }
+  height: unset;
+  min-height: unset; }
 
 main #section-b {
   padding: 2em 1em 1em;
@@ -215,11 +213,17 @@ footer {
   .box,
   #main-footer div {
     grid-column: span 2; }
-  main #section-a .content-text {
-    columns: 2;
-    column-gap: 2em; }
-    main #section-a .content-text p {
-      padding-top: 0; }
+  #showcase {
+    height: 60vh;
+    min-height: 450px; }
+    #showcase .bg-image {
+      height: 60vh; }
+  main #section-a {
+    height: 40vh;
+    min-height: 420px; }
+    main #section-a .content-text {
+      columns: 2;
+      column-gap: 2em; }
   main #section-b ul {
     display: flex;
     grid-column: 2/4;

@@ -13,15 +13,27 @@
     grid-column: span 2;
   }
 
+  #showcase {
+    height: 60vh;
+    min-height: 450px;
+
+    .bg-image {
+      height: 60vh;
+    }
+  }
+
   main {
     #section-a {
+      height: 40vh;
+      min-height: 420px;
+
       .content-text {
         columns: 2;
         column-gap: 2em;
 
-        p {
-          padding-top: 0;
-        }
+        // p {
+        //   padding-top: 0;
+        // }
       }
     }
 
