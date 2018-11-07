@@ -1,5 +1,6 @@
 @import "config";
 @import "form";
+@import "iframeMap";
 
 // Core Styles
 * {
@@ -197,13 +198,6 @@ main {
         }
       }
     }
-
-    // .btn-sponsors {
-    //   &:hover {
-    //     color: #fff;
-    //     background: $orange-color;
-    //   }
-    // }
   }
 
   #section-d {

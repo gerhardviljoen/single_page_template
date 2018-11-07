@@ -1,8 +1,3 @@
-let contactForm = document.querySelector("#contactForm");
-// let btnMessageUs = document.querySelector("#btnMessageUs");
-
-// btnMessageUs.addEventListener("click", showMessageForm);
-
 $("#btnReadMore").on("click", function() {
   const images = $("#section-b").position().top;
 
@@ -12,4 +7,9 @@ $("#btnReadMore").on("click", function() {
     },
     900
   );
+});
+
+window.addEventListener("load", () => {
+  console.log("reload");
+  // window.scroll().scrollTop;
 });

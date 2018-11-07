@@ -56,7 +56,13 @@
         }
 
         &:last-child {
-          grid-column: 2/4;
+          grid-column: 3/5;
+        }
+      }
+
+      .google-map-iframe {
+        iframe {
+          height: 500px;
         }
       }
 
