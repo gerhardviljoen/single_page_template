@@ -1,0 +1,29 @@
+#gallery-header {
+  .bg-image {
+    background: $gallery_header_background;
+    opacity: 0.3;
+    height: 30vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    @include backgroundProperties;
+  }
+}
+
+.gallery-section {
+  align-content: center;
+  background: #eaeaea;
+  color: #333;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+
+  .grid-item {
+    border: 1px solid #444;
+
+    .grid-item-image {
+      background: #444;
+    }
+  }
+}

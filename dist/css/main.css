@@ -34,6 +34,30 @@ main #section-d .google-map-iframe iframe {
   width: -webkit-fill-available;
   height: 400px; }
 
+#gallery-header .bg-image {
+  background: url("../img/common/backgroundImage5.jpg");
+  opacity: 0.3;
+  height: 30vh;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.gallery-section {
+  align-content: center;
+  background: #eaeaea;
+  color: #333;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem; }
+  .gallery-section .grid-item {
+    border: 1px solid #444; }
+    .gallery-section .grid-item .grid-item-image {
+      background: #444; }
+
 * {
   box-sizing: border-box;
   overflow-x: hidden; }
@@ -217,7 +241,8 @@ footer {
     height: 60vh;
     min-height: 450px; }
     #showcase .bg-image {
-      height: 60vh; }
+      height: 60vh;
+      min-height: 450px; }
   main #section-a {
     height: 40vh;
     min-height: 420px; }
@@ -246,4 +271,10 @@ footer {
       padding: 0.5rem;
       grid-gap: 0px; }
     main #section-d #contactForm .wrapper .contact form {
-      grid-gap: 0px; } }
+      grid-gap: 0px; }
+  .gallery-section {
+    grid-template-columns: 1fr 1fr; } }
+
+@media screen and (min-width: 1300px) {
+  .gallery-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }

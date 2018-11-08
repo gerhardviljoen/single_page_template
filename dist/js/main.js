@@ -8,8 +8,3 @@ $("#btnReadMore").on("click", function() {
     900
   );
 });
-
-window.addEventListener("load", () => {
-  console.log("reload");
-  // window.scroll().scrollTop;
-});

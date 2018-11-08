@@ -19,6 +19,7 @@
 
     .bg-image {
       height: 60vh;
+      min-height: 450px;
     }
   }
 
@@ -30,10 +31,6 @@
       .content-text {
         columns: 2;
         column-gap: 2em;
-
-        // p {
-        //   padding-top: 0;
-        // }
       }
     }
 
@@ -95,5 +92,17 @@
         }
       }
     }
+  }
+
+  // GALLERY
+  .gallery-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include mediaXLg {
+  // GALLERY
+  .gallery-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
